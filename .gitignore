@@ -3,3 +3,6 @@ config/
 
 # Ingore generatet AI context file
 context/ai-context.txt
+
+# Ignore environment variables file
+.env
