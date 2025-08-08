@@ -1,0 +1,5 @@
+# Ingore nested HA config repository
+config/
+
+# Ingore generatet AI context file
+context/ai-context.txt
