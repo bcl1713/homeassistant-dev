@@ -23,7 +23,7 @@ if ssh $HAOS_USER@$HAOS_IP "ha core check"; then
   RELOAD_RESPONSE=$(curl -s -X POST \
     -H "Authorization: Bearer $HA_TOKEN" \
     -H "Content-Type: application/json" \
-    "http://$HAOS_IP:8123/api/services/homeassistant/reload_core_config")
+    "http://$HAOS_IP:8123/api/services/homeassistant/reload_all")
 
   echo "✅ Rollback complete and core reloaded!"
 else
